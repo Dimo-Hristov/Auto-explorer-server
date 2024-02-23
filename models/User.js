@@ -11,6 +11,7 @@ userSchema.index({ email: 1 }, {
         locale: 'en',
         strength: 2
     }
+
 })
 
 const User = model('User', userSchema)
