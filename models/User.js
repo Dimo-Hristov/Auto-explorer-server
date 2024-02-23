@@ -3,13 +3,6 @@ const { Schema, model } = require('mongoose')
 //todo email validator
 const userSchema = new Schema({
     email: { type: String, required: true, unique: true },
-    username: {
-        type: String,
-        required: true,
-        unique: true,
-        minlength: [2, 'Username must be at least 5 characters!'],
-        maxlength: [30, 'Username cannot have more than 10 characters!'],
-    },
     hashedPassword: { type: String, required: true, }
 });
 

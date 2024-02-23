@@ -7,7 +7,7 @@ const router = require('./routes');
 // const { connectionString } = require('./strings.js');
 
 
-const initDB = () => mongoose.connect('mongodb+srv://dimo:940516Mongo@auto-explorer.eafxsf7.mongodb.net/auto-explorer?retryWrites=true&w=majority')
+const initDB = () => mongoose.connect('mongodb://127.0.0.1:27017/destinations-forum')
 
 
 startServer()
